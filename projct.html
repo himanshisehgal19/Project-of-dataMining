@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+ 	<title> Physician Data mining</title>
+ </head>
+ <body>
+   <div class ="container">
+   <div class ="jumbotron text-center"
+   <div class="showcase container purple lighten-3">
+      
+    <h1>PHYSICIAN DATAMINING PROJECT</h1>
+    <br> <br> 
+    
+    </div>
+    </div>
+   </div>
+</div>
+
+ 	<center>
+      <h3 style="margin-left: 0rem;"> COLUMNS OF YOUR CSV FILE ARE:</h3>
+
+<BR><BR>
+   
+      <div class="container alert alert-success">
+         
+         
+  {% for your_list_element in your_list %}
+  	<label  class="btn btn-info" >
+  
+
+     {{ your_list_element }}
+   
+     <br> </p>
+  </label>
+
+  
+  {% endfor %}
+</div>
+
+
+ </center>
+<center>
+  
+</center>
+ <center>
+ <form method="POST" action="/hs">
+  <input type ="number" name ="num1" placeholder="from" action ="hs">  <input type ="number" name ="num2" placeholder="To" action ="hs">
+
+   <br>
+   <h2 >Enter the column Names: </h2>
+  <!--<input type ="text" name ="name1" placeholder="column1" action ="hs">-->
+  <div class="btn btn-primary">
+  <select name= "name1" method="GET" action="/">
+    {% for colour in your_list %}
+    <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+    {% endfor %}
+    <option SELECTED>Select Column 1</option>
+  </select>
+</div>
+  <br>
+  <br>
+  <div class="btn btn-primary">
+  <select name= "name2" method="GET" action="/">
+    {% for colour in your_list %}
+    <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+    {% endfor %}
+    <option SELECTED>Select Column 2</option>
+  </select>
+  </div>
+  <br>
+  <br>
+  <div class="btn btn-primary">
+  <select name= "name3" method="GET" action="/">
+    {% for colour in your_list %}
+    <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+    {% endfor %}
+    <option SELECTED>Select Column 3</option>
+  </select>
+</div>
+  <br>
+  <br>
+  <div class="btn btn-primary">
+    <select name= "name5" method="GET" action="/">
+      {% for colour in your_list %}
+      <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+      {% endfor %}
+      <option value=" " SELECTED>Select Column 4</option>
+    </select>
+  </div>
+    <br>
+    <br>
+    <div class="btn btn-primary">
+      <select name= "name6" method="GET" action="/">
+        {% for colour in your_list %}
+        <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+        {% endfor %}
+        <option value=" " SELECTED>Select Column 5</option>
+      </select>
+    </div>
+      <br>
+      <br>
+      <div class="btn btn-primary">
+        <select name= "name7" method="GET" action="/">
+          {% for colour in your_list %}
+          <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+          {% endfor %}
+          <option value=" " SELECTED>Select Column 6</option>
+        </select>
+      </div>
+        <br>
+        <br>
+        <div class="btn btn-primary">
+          <select name= "name8" method="GET" action="/">
+            {% for colour in your_list %}
+            <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+            {% endfor %}
+            <option value=" " SELECTED>Select Column 7</option>
+          </select>
+        </div>
+          <br>
+          <br>
+          <div class="btn btn-primary">
+            <select name= "name9" method="GET" action="/">
+              {% for colour in your_list %}
+              <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+              {% endfor %}
+              <option value=" " SELECTED>Select Column 8</option>
+            </select>
+          </div>
+            <br>
+            <br>
+            <div class="btn btn-primary">
+              <select name= "name10" method="GET" action="/">
+                {% for colour in your_list %}
+                <option value= "{{colour}}" SELECTED>{{ colour }}</option>"
+                {% endfor %}
+                <option value=" " SELECTED>Select Column 9</option>
+              </select>
+            </div>
+              <br>
+              <br>
+ <!-- <input type ="text" name ="name2" placeholder="column2" action ="hs"><br>
+  <br>
+  <input type ="text" name ="name3" placeholder="column3" action="hs">
+  <br>
+  <br>-->
+  <h2 >Enter the column Name of phone numbers : </h2>
+  <br>
+  <div class="btn btn-primary">
+  <select name= "name4" method="GET" action="/">
+    
+    {% for colour in your_list %}
+    <option value= "{{colour}}" SELECTED>  {{ colour }}</option>
+    {% endfor %}
+    <option SELECTED>Choose one</option>
+  
+  </select>
+</div>
+ <!-- <input type ="text" name ="name4" placeholder="Column of Phone Number" action="hs">-->
+  <br><br><br>
+<input type="submit" class="btn btn-warning" value="Verify Phone Number">
+</form>
+  <br>
+  <br>
+ 
+
+<br><br>
+
+
+</center>
+<script>
+
+	</script>
+</body>
+</html>
